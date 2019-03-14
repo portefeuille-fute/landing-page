@@ -18,5 +18,4 @@ sitedescription: "Plusieurs de vos abonnements/services vous offrent des rabais 
 sitetitle: "Dealfinder | Accédez aux économies auxquels vous avez droit"
 defaultsocialimage: ""
 animation: images/intro-animation.gif
-removefromexternalsearch: false
-titleautocompletion: false
+removefromexternalsearch: true
