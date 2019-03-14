@@ -2885,3 +2885,10 @@ svg.svg-cta-bottom {
 	padding:8px 15px; 
 }
 }
+
+/*========
+Akia
+/*======*/
+#netlify-identity-widget {
+  z-index: 1000 !important;
+}
