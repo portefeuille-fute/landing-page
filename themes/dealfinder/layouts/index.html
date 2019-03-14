@@ -1,0 +1,381 @@
+{{ define "main" }}
+<!-- Section -- intro -->
+{{ with .Params.section1 }}
+<section class="section section--intro" id="intro">
+    <div class="section__content section__content--fix-width section__content--intro">
+      <div class="intro">
+        <div class="intro__content">
+          <div class="intro__title">{{- .title | markdownify -}}</div>
+          <div class="intro__description">{{- .description | markdownify -}}</div>
+          <div class="intro__buttons intro__buttons--centered">
+            <a href="{{- .btn1.link -}}" class="btn btn--red-bg">{{- .btn1.text -}}</a>
+            <a href="{{- .btn2.link -}}" class="btn btn--green-border">{{- .btn2.text -}}</a>
+          </div>
+        </div>  
+      </div>
+      <div class="intro-animation">
+        <div class="animation__play modal-toggle" data-openpopup="animation"><span></span></div>
+        <img src="{{- .image -}}" alt="" title=""/>
+      </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Section -- about -->
+{{ with .Params.section2 }}
+<section class="section" id="about">
+    <div class="section__content section__content--fix-width section__content--padding">
+      <div class="grid grid--5col grid--about">
+        <div class="grid__item grid__item--x2">
+          <h3 class="grid__title">{{- .title | markdownify -}}</span></h3>
+          <p class="grid__text">{{ .description | markdownify }}</p>
+          <ul class="grid__list">
+            {{- range .points -}}
+            <li>{{ .text }}</li> 
+            {{- end -}}
+          </ul>
+        </div>
+        <div class="grid__item grid__item--x3">
+          <div class="grid__image grid__image--right"><img src="{{- .image -}}" alt="" title=""/></div>
+        </div>
+      </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Section -- features -->
+{{ with .Params.section3 }}
+<section class="section section--features" id="features">
+    <div class="section__content section__content--fix-width section__content--features">
+      <h2 class="section__title section__title--centered section__title--features">{{- .title -}}</h2>
+      <div class="section__description section__description--centered section__description--features">
+        {{ .description | markdownify }}
+      </div>
+      <div class="grid grid--3col grid--features">
+        {{- range first 3 .points -}}
+        <div class="grid__item">
+          <div class="grid__icon"><img src="{{- .icon -}}" alt="" title=""/></div>
+          <h3 class="grid__title">{{- .title | markdownify -}}</h3>
+          <p class="grid__text">{{- .description | markdownify -}}</p>
+        </div>
+        {{- end -}}
+      </div>  
+      <div class="grid grid--3col grid--features"> 
+        {{- range last 3 .points -}} 
+        <div class="grid__item">
+          <div class="grid__icon"><img src="{{- .icon -}}" alt="" title=""/></div>
+          <h3 class="grid__title">{{- .title | markdownify -}}</h3>
+          <p class="grid__text">{{- .description | markdownify -}}</p>
+        </div>
+        {{- end -}}
+      </div>
+      <div class="clear"></div>
+    </div>
+</section>
+{{ end }}
+
+
+<!-- Section -- How it works -->
+{{ with .Params.section4 }}
+<section class="section section--hiw" id="hiw">
+    <div class="section__content section__content--fix-width section__content--padding">
+      <h2 class="section__title section__title--centered">{{- .title -}}</h2>
+      <div class="section__description section__description--centered">
+        {{- .description | markdownify -}}
+      </div>
+         <div class="hiw">
+            <div class="hiw-titles">
+              <div class="hiw-titles__wrapper swiper-wrapper">
+                {{- range .points -}}
+                <div class="hiw-titles__slide swiper-slide">
+                  <img src="{{- .icon -}}" alt="{{- .title -}}" title="{{- .title -}}"/>
+                  <span>{{- .title -}}</span>
+                </div>
+                {{- end -}}
+              </div>  
+            </div>                   
+            <div class="hiw-content">
+              <div class="hiw-content__wrapper swiper-wrapper">
+                {{- range .points -}}
+                <div class="hiw-content__slide swiper-slide">
+                    <img src="{{- .image -}}" alt="{{- .title -}}" title="{{- .title -}}"/>      
+                </div>
+                {{- end -}}
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+
+<!-- Section -- pricing -->
+{{- with .Params.skip -}}
+<section class="section" id="pricing">
+
+    <div class="section__content section__content--fix-width section__content--padding">
+            <h2 class="section__title section__title--centered">Our Plans</h2>
+      <div class="section__description section__description--centered">
+      We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business.
+      </div>
+      
+        
+        <div class="pricing">
+          <div class="pricing__switcher switcher">
+            <div class="switcher__buttons">
+              <div class="switcher__button switcher__button--enabled">Monthly</div> 
+              <div class="switcher__button">Yearly</div>
+              <div class="switcher__border"></div>
+            </div>
+            
+          </div>
+
+        
+          <div class="pricing__plan">
+            <h3 class="pricing__title">FREE</h3>   
+            <div class="pricing__values">
+              <div class="pricing__value pricing__value--show"><span>$</span>0 <b>/ month</b></div>
+              <div class="pricing__value pricing__value--hide pricing__value--hidden"><span>$</span>0 <b>/ yearly</b></div>
+            </div>  
+            <ul class="pricing__list">
+              <li><b>1</b> User Account</li>
+              <li><b>10</b> Team Members</li>
+              <li><b>Unlimited</b> Emails Accounts</li> 
+              <li>Set And Manage Permissions</li>
+              <li class="disabled">API &amp; extension support</li> 
+              <li class="disabled">Developer support</li>
+              <li class="disabled">A / B Testing</li>     
+            </ul> 
+            <a class="pricing__signup" href="">Sign up</a>
+          </div>
+          <div class="pricing__plan">
+            <h3 class="pricing__title">STARTUP</h3>       
+            <div class="pricing__values">
+              <div class="pricing__value pricing__value--show"><span>$</span>29 <b>/ month</b></div>
+              <div class="pricing__value pricing__value--hide pricing__value--hidden"><span>$</span>320 <b>/ yearly</b></div>
+            </div>
+            <ul class="pricing__list">
+              <li><b>10</b> User Account</li>
+              <li><b>100</b> Team Members</li>
+              <li><b>Unlimited</b> Emails Accounts</li> 
+              <li>Set And Manage Permissions</li>
+              <li>API &amp; extension support</li>  
+              <li class="disabled">Developer support</li>
+              <li class="disabled">A / B Testing</li>     
+            </ul> 
+            <a class="pricing__signup" href="">Sign up</a> 
+          </div>
+          <div class="pricing__plan pricing__plan--popular">
+                   <div class="pricing__badge-bg"></div>
+             <div class="pricing__badge-text">POPULAR</div>
+            <h3 class="pricing__title">PRO</h3>       
+            <div class="pricing__values">
+              <div class="pricing__value pricing__value--show"><span>$</span>49 <b>/ month</b></div>
+              <div class="pricing__value pricing__value--hide pricing__value--hidden"><span>$</span>529 <b>/ yearly</b></div>
+            </div>
+            <ul class="pricing__list">
+              <li><b>50</b> User Account</li>
+              <li><b>500</b> Team Members</li>
+              <li><b>Unlimited</b> Emails Accounts</li> 
+              <li>Set And Manage Permis sions</li>
+              <li>API &amp; extension support</li>  
+              <li>Developer support</li>
+              <li class="disabled">A / B Testing</li>   
+            </ul> 
+            <a class="pricing__signup" href="">Sign up</a>
+          </div>
+          <div class="pricing__plan">
+            <h3 class="pricing__title">ULTRA</h3>       
+            <div class="pricing__values">
+              <div class="pricing__value pricing__value--show"><span>$</span>99 <b>/ month</b></div>
+              <div class="pricing__value pricing__value--hide pricing__value--hidden"><span>$</span>900 <b>/ yearly</b></div>
+            </div>
+            <ul class="pricing__list">
+              <li><b>Unlimited</b> User Account</li>
+              <li><b>Unlimited</b> Team Members</li>
+              <li><b>Unlimited</b> Emails Accounts</li> 
+              <li>Set And Manage Permissions</li>
+              <li>API &amp; extension support</li>  
+              <li>Developer support</li>
+              <li>A / B Testing</li>
+    
+            </ul> 
+            <a class="pricing__signup" href="">Sign up</a>
+          </div>  
+        </div>
+      
+      <div class="clear"></div>
+    </div>
+  
+</section>
+{{- end -}}
+
+<!-- Section -- testimonials -->
+{{- with .Params.skip -}}
+<section class="section" id="testimonials">
+
+    <div class="section__content section__content--fix-width section__content--padding">
+            <h2 class="section__title section__title--centered">Success stories</h2>
+      <div class="section__description section__description--centered">
+      Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service
+      </div>
+          <div class="testimonials">
+            <svg class="svg-testimonials-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 0,100"/></svg>
+            <svg class="svg-testimonials-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 100,100"/></svg>
+            <svg class="svg-testimonials-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 100,100"/></svg>
+            <svg class="svg-testimonials-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,100 100,0 100,100"/></svg>
+          <div class="testimonials__content swiper-wrapper">
+              <div class="testimonials__slide swiper-slide">
+              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-1.jpg" alt="" title=""/></div>
+              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"Business is all about the customer: what the customer wants and what they get. Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service"</p></div>
+              <div class="testimonials__source">Lason Duvan <a href="#">New York Business Center</a></div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-2.jpg" alt="" title=""/></div>
+              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"No one can make you successful; the will to success comes from within.' I've made this my motto. I've internalized it to the point of understanding that the success of my actions and/or endeavors doesn't depend on anyone else, and that includes a possible failure"</p></div>
+              <div class="testimonials__source">Jada Sacks <a href="#">Paris Tehnics</a></div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-3.jpg" alt="" title=""/></div>
+              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"The American Dream is that any man or woman, despite of his or her background, can change their circumstances and rise as high as they are willing to work"</p></div>
+              <div class="testimonials__source">Lason Duvan <a href="#">Music Software</a></div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-4.jpg" alt="" title=""/></div>
+              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"Business is all about the customer: what the customer wants and what they get. Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service"</p></div>
+              <div class="testimonials__source">Duran Jackson <a href="#">New York Business Center</a></div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-5.jpg" alt="" title=""/></div>
+              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"No one can make you successful; the will to success comes from within.' I've made this my motto. I've internalized it to the point of understanding that the success of my actions and/or endeavors doesn't depend on anyone else, and that includes a possible failure"</p></div>
+              <div class="testimonials__source">Maria Allesi <a href="#">Italy Solutions</a></div>
+              </div>
+              <div class="testimonials__slide swiper-slide">
+              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-6.jpg" alt="" title=""/></div>
+              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"The American Dream is that any man or woman, despite of his or her background, can change their circumstances and rise as high as they are willing to work"</p></div>
+              <div class="testimonials__source">Jenifer Patrison<a href="#">App Dating</a></div>
+              </div>  
+          </div>
+          
+          <div class="testimonials__pagination swiper-pagination"></div>
+        </div>
+      <div class="clear"></div>
+    </div>
+  
+</section> 
+{{ end }} 
+
+<!-- Section -- contact -->
+{{ with .Params.section5 }}
+<section class="section" id="contact">
+    <div class="section__content section__content--fix-width section__content--padding">
+      <h2 class="section__title section__title--centered">{{- .title -}}</h2>
+      <div class="section__description section__description--centered">
+      {{- .description -}}
+      </div>
+      <div class="grid grid--5col grid--contact">
+             
+        <div class="grid__item grid__item--x2 grid__item--padding">
+          <h3 class="grid__title">{{- .tagline1 | markdownify -}}</h3>
+          <p class="grid__text">{{- .tagline2 -}}</p>
+          <a href="mailto:info@dealfinder.com" class="grid__more">info@dealfinder.com</a>
+        </div>
+        <div class="grid__item grid__item--x3 grid__item--form">
+            <div class="grid__form form">
+              <svg class="svg-form-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#33ffbd" points="0,0 100,0 0,100"/></svg>
+              <form class="form__container" id="ContactForm" method="post" action="/merci" netlify name="home-contact">
+                <div class="form__row">
+                  <label class="form__label" for="namec">Nom</label>
+                  <input name="namec" id="namec" class="form__input" type="text"/>
+                  <span class="form__row-border"></span>
+                </div>
+                <div class="form__row">
+                  <label class="form__label">Courriel</label>
+                  <input name="emailc" class="form__input" type="email"/>  
+                  <span class="form__row-border"></span>                  
+                </div>
+                <div class="form__row">
+                  <label class="form__label">Message</label>
+                  <textarea name="message" class="form__textarea" rows="3" cols="3"></textarea>
+                  <span class="form__row-border"></span>
+                </div>
+                <div class="" data-netlify-recaptcha></div>
+                <input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitc" value="ENVOYER" />
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+</section>
+{{ end }}
+
+<!-- Section -->
+{{- with .Params.skip -}}
+<section class="section" id="support">
+    <div class="section__content section__content--fix-width section__content--padding">  
+      <div class="grid grid--3col grid--support">
+      
+        <div class="grid__item grid__item--padding">
+          <div class="grid__icon"><img src="images/icons/icons-64/support-64.png" alt="" title=""/></div>
+          <h3 class="grid__title">Help &amp; Support</h3>
+          <p class="grid__text">Your issue is our main priority. Our 24/7 support team is here to help you and make sure our product is up to date.</p>
+          <a href="#" class="grid__more">support@supportemail.com</a>
+        </div>
+        <div class="grid__item grid__item--padding">
+          <div class="grid__icon"><img src="images/icons/icons-64/globe-64.png" alt="" title=""/></div>
+          <h3 class="grid__title">Media &amp; Press</h3>
+          <p class="grid__text">Online awards and publications. Get our media resources and learn about our company information.    
+          </p>
+          <a href="#" class="grid__more">media@youremail.com</a>
+        </div>
+        <div class="grid__item grid__item--padding">
+          <div class="grid__icon"><img src="images/icons/icons-64/wallet-64.png" alt="" title=""/></div>
+          <h3 class="grid__title">Sales</h3>
+          <p class="grid__text">Have a presale question about our products and features? Or looking for a refund? We would love to hear what you concern is.
+          </p>
+          <a href="#" class="grid__more">sales@salesemail.com</a>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  
+</section>
+{{- end -}}
+
+
+<!-- Section -->
+{{ with .Params.section6 }}
+<section class="section section--clients" id="partenaires">
+    <div class="section__content section__content--fix-width section__content--padding">        
+      <div class="grid grid--5col">
+        {{- range .clients -}}
+        <div class="grid__item">
+          <div class="grid__client-logo">
+            <a href="{{- .link -}}" target="_blank"><img src="{{- .logo -}}" alt="" title=""/></a>
+          </div>
+        </div>
+        {{- end -}}
+      </div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Section -->
+{{ with .Params.section7 }}
+<section class="section section--cta" id="cta">
+    <div class="section__content section__content--fix-width section__content--padding">
+      <h2 class="section__title section__title--centered section__title--cta">{{- .title -}}</h2>
+      <div class="section__description section__description--centered section__description--cta">
+      {{- .description -}}
+      </div>
+      <div class="intro__buttons intro__buttons--centered">
+        <a href="{{- .btn.link -}}" class="btn btn--green-bg">{{- .btn.text -}}</a>
+      </div>
+    </div>
+    <svg class="svg-cta-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon fill="#fff" points="0,100 100,0 0,0"/>
+    </svg>
+</section>
+{{ end }}
+{{ end }}
