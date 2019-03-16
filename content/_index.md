@@ -36,9 +36,8 @@ section3:
       icon: images/icons/icons-64/browser-64.png
       title: Consultation des avantages par catégories
     - description: >-
-        Remplissez un budget approximatif. Ensuite,vous pourrez visualiser pour
-        quelles catégories de dépense vous pouvez faire le plus d’économie selon
-        vos avantages membre.
+        Remplissez un budget approximatif pour visualiser par catégories les
+        économies que vous pouvez réaliser.
       icon: images/icons/icons-64/desktop-chart-64.png
       title: Analyse de budget
     - description: >-
