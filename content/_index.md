@@ -19,7 +19,9 @@ section2:
     - text: >-
         33% de nos profits sont réinvestis dans des projets de protection de
         l'environnement 
-    - text: 6 fonctionnalités pour faciliter et maximiser l’utilisation des rabais
+    - text: >-
+        6 fonctionnalités pour faciliter et maximiser l’utilisation de vos
+        rabais
     - text: Suivi sans effort de vos avantages membre
   title: Sauver votre <span>argent</span> et la <span>planète</span> en même temps
 section3:
