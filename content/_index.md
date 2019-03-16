@@ -31,38 +31,36 @@ section3:
     que vous possédez.
   points:
     - description: >-
-        Identifiez les différents abonnements/services dont vous êtes membre.
-        Ensuite, vous pourrez consulter tous les rabais auxquels vous avez
-        droit.
+        Consultez tous les avantages membre auxquels vous avez droit selon vos
+        différents abonnements/services.
       icon: images/icons/icons-64/browser-64.png
       title: Consultation des avantages par catégories
     - description: >-
-        Remplissez un budget approximatif. Ensuite,vous pourrez visualiser pour
-        quelles catégories de dépense vous pouvez faire le plus d’économie selon
-        vos avantages membre.
+        Remplissez un budget approximatif pour visualiser par catégories les
+        économies que vous pouvez réaliser.
       icon: images/icons/icons-64/desktop-chart-64.png
       title: Analyse de budget
     - description: >-
         Utilisez notre étude d’achat géolocalisé pour trouver les commercants où
-        vous pouvez utiliser vos rabais à proximité.
+        vous pouvez utiliser vos rabais.
       icon: images/icons/icons-64/map-marker-64.png
       title: Achat local
     - description: >-
-        Utilisez notre comparateur de fournisseur avant de faire votre choix
-        entre deux options en analysant les rabais fournis par ceux-ci.
+        Utilisez notre comparateur de fournisseur avant de vous abonner à l'un
+        d'entre eux en analysant leurs avantages membre.
       icon: images/icons/icons-64/wallet-64.png
       title: Aide à la décision
     - description: >-
-        Dans certains cas, il peut être avantageux de prendre un abonnement dans
-        le seul but d’utiliser les avantages membre qu’il offre. Trouver
-        l’abonnement/service qui offre le meilleur rabais dans une catégorie
-        donnée.
+        Utilisez cette fonction qui cherchera, dans notre banque de données, le
+        fournisseur qui offre les meilleurs avantages membre dans une catégorie
+        pour laquelle vous souhaitez économiser davantage.
       icon: images/icons/icons-64/research-64.png
       title: Fournisseur du meilleur rabais
     - description: >-
         Certains événements telle une rentrée scolaire ou un déménagement
         comportent leur lot de dépenses. Nous vous proposons des combinaisons de
-        rabais pour maximiser vos économies sans que vous aillez à y penser.
+        rabais reliés à ces évènements pour maximiser vos économies sans avoir à
+        y penser.
       icon: images/icons/icons-64/raport-64.png
       title: Événement
   title: Fonctionnalités du Portefeuille Futé
