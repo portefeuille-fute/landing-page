@@ -42,19 +42,18 @@ section3:
       title: Analyse de budget
     - description: >-
         Utilisez notre étude d’achat géolocalisé pour trouver les commercants où
-        vous pouvez utiliser vos rabais à proximité.
+        vous pouvez utiliser vos rabais.
       icon: images/icons/icons-64/map-marker-64.png
       title: Achat local
     - description: >-
-        Utilisez notre comparateur de fournisseur avant de faire votre choix
-        entre deux options en analysant les rabais fournis par ceux-ci.
+        Utilisez notre comparateur de fournisseur avant de vous abonner à l'un
+        d'entre eux en analysant leurs avantages membre.
       icon: images/icons/icons-64/wallet-64.png
       title: Aide à la décision
     - description: >-
-        Dans certains cas, il peut être avantageux de prendre un abonnement dans
-        le seul but d’utiliser les avantages membre qu’il offre. Trouver
-        l’abonnement/service qui offre le meilleur rabais dans une catégorie
-        donnée.
+        Utilisez cette fonction qui cherchera, dans notre banque de données, le
+        fournisseur qui offre les meilleurs avantages membre dans une catégorie
+        pour laquelle vous souhaitez économiser davantage.
       icon: images/icons/icons-64/research-64.png
       title: Fournisseur du meilleur rabais
     - description: >-
