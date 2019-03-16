@@ -31,9 +31,8 @@ section3:
     que vous possédez.
   points:
     - description: >-
-        Identifiez les différents abonnements/services dont vous êtes membre.
-        Ensuite, vous pourrez consulter tous les rabais auxquels vous avez
-        droit.
+        Consultez tous les avantages membre auxquels vous avez droit selon vos
+        différents abonnements/services.
       icon: images/icons/icons-64/browser-64.png
       title: Consultation des avantages par catégories
     - description: >-
