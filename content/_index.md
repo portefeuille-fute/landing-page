@@ -17,12 +17,10 @@ section2:
   image: images/desktop-frame-about.gif
   points:
     - text: >-
-        Centralisation de vos informations liées aux rabais issues de vos
-        abonnements
-    - text: Fonctionnalités pour faciliter et maximiser l’utilisation des rabais
-    - text: >-
-        En utilisant notre plateforme, vous contribuez au bien-être de la
-        planète
+        33% de nos profits sont réinvestis dans des projets de protection de
+        l'environnement 
+    - text: 6 fonctionnalités pour faciliter et maximiser l’utilisation des rabais
+    - text: Suivi sans effort de vos avantages membre
   title: Sauver votre <span>argent</span> et la <span>planète</span> en même temps
 section3:
   description: >-
