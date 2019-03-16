@@ -59,7 +59,8 @@ section3:
     - description: >-
         Certains événements telle une rentrée scolaire ou un déménagement
         comportent leur lot de dépenses. Nous vous proposons des combinaisons de
-        rabais pour maximiser vos économies sans que vous aillez à y penser.
+        rabais reliés à ces évènements pour maximiser vos économies sans avoir à
+        y penser.
       icon: images/icons/icons-64/raport-64.png
       title: Événement
   title: Fonctionnalités du Portefeuille Futé
