@@ -6,7 +6,7 @@ section1:
   btn2:
     link: 'http://oupsie.com/'
     text: CONNEXION
-  description: Maximisez les <span>rabais-partenaires</span> auxquels vous avez droit
+  description: Maximisez les <span>avantages membre</span> auxquels vous avez droit
   image: images/intro-animation.png
   title: Ouvrez la porte aux <span>économies</span>
 section2:
