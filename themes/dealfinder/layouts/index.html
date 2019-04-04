@@ -108,6 +108,37 @@
 </section>
 {{ end }}
 
+{{ with .Params.section5 }}
+<!-- Section -- testimonials -->
+<section class="section" id="testimonials">
+
+    <div class="section__content section__content--fix-width section__content--padding">
+            <h2 class="section__title section__title--centered">{{- .title -}}</h2>
+      <div class="section__description section__description--centered">
+        {{- .description -}}
+      </div>
+          <div class="testimonials">
+            <svg class="svg-testimonials-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 0,100"/></svg>
+            <svg class="svg-testimonials-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 100,100"/></svg>
+            <svg class="svg-testimonials-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 100,100"/></svg>
+            <svg class="svg-testimonials-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,100 100,0 100,100"/></svg>
+          <div class="testimonials__content swiper-wrapper">
+            {{- range .points -}}
+              <div class="testimonials__slide swiper-slide">
+              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="{{- .image -}}" alt="" title=""/></div>
+              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"{{- .description -}}"</p></div>
+              <div class="testimonials__source">{{- .name -}}</div>
+              </div>
+            {{- end -}}
+          </div>
+          <div class="testimonials__pagination swiper-pagination"></div>
+        </div>
+      <div class="clear"></div>
+    </div>
+  
+</section>
+{{ end }}
+
 
 <!-- Section -- pricing -->
 {{- with .Params.skip -}}
@@ -208,65 +239,10 @@
     </div>
   
 </section>
-{{- end -}}
-
-<!-- Section -- testimonials -->
-{{- with .Params.skip -}}
-<section class="section" id="testimonials">
-
-    <div class="section__content section__content--fix-width section__content--padding">
-            <h2 class="section__title section__title--centered">Success stories</h2>
-      <div class="section__description section__description--centered">
-      Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service
-      </div>
-          <div class="testimonials">
-            <svg class="svg-testimonials-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 0,100"/></svg>
-            <svg class="svg-testimonials-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 100,100"/></svg>
-            <svg class="svg-testimonials-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,0 100,0 100,100"/></svg>
-            <svg class="svg-testimonials-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#fff" points="0,100 100,0 100,100"/></svg>
-          <div class="testimonials__content swiper-wrapper">
-              <div class="testimonials__slide swiper-slide">
-              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-1.jpg" alt="" title=""/></div>
-              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"Business is all about the customer: what the customer wants and what they get. Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service"</p></div>
-              <div class="testimonials__source">Lason Duvan <a href="#">New York Business Center</a></div>
-              </div>
-              <div class="testimonials__slide swiper-slide">
-              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-2.jpg" alt="" title=""/></div>
-              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"No one can make you successful; the will to success comes from within.' I've made this my motto. I've internalized it to the point of understanding that the success of my actions and/or endeavors doesn't depend on anyone else, and that includes a possible failure"</p></div>
-              <div class="testimonials__source">Jada Sacks <a href="#">Paris Tehnics</a></div>
-              </div>
-              <div class="testimonials__slide swiper-slide">
-              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-3.jpg" alt="" title=""/></div>
-              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"The American Dream is that any man or woman, despite of his or her background, can change their circumstances and rise as high as they are willing to work"</p></div>
-              <div class="testimonials__source">Lason Duvan <a href="#">Music Software</a></div>
-              </div>
-              <div class="testimonials__slide swiper-slide">
-              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-4.jpg" alt="" title=""/></div>
-              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"Business is all about the customer: what the customer wants and what they get. Generally, every customer wants a product or service that solves their problem, worth their money, and is delivered with amazing customer service"</p></div>
-              <div class="testimonials__source">Duran Jackson <a href="#">New York Business Center</a></div>
-              </div>
-              <div class="testimonials__slide swiper-slide">
-              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-5.jpg" alt="" title=""/></div>
-              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"No one can make you successful; the will to success comes from within.' I've made this my motto. I've internalized it to the point of understanding that the success of my actions and/or endeavors doesn't depend on anyone else, and that includes a possible failure"</p></div>
-              <div class="testimonials__source">Maria Allesi <a href="#">Italy Solutions</a></div>
-              </div>
-              <div class="testimonials__slide swiper-slide">
-              <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="images/avatar-6.jpg" alt="" title=""/></div>
-              <div class="testimonials__text" data-swiper-parallax="-100%"><p>"The American Dream is that any man or woman, despite of his or her background, can change their circumstances and rise as high as they are willing to work"</p></div>
-              <div class="testimonials__source">Jenifer Patrison<a href="#">App Dating</a></div>
-              </div>  
-          </div>
-          
-          <div class="testimonials__pagination swiper-pagination"></div>
-        </div>
-      <div class="clear"></div>
-    </div>
-  
-</section> 
-{{ end }} 
+{{- end -}} 
 
 <!-- Section -- contact -->
-{{ with .Params.section5 }}
+{{ with .Params.section6 }}
 <section class="section" id="contact">
     <div class="section__content section__content--fix-width section__content--padding">
       <h2 class="section__title section__title--centered">{{- .title -}}</h2>
@@ -282,7 +258,7 @@
         </div>
         <div class="grid__item grid__item--x3 grid__item--form">
             <div class="grid__form form">
-              <svg class="svg-form-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#33ffbd" points="0,0 100,0 0,100"/></svg>
+              <svg class="svg-form-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#00c390" points="0,0 100,0 0,100"/></svg>
               <form class="form__container" id="ContactForm" method="post" action="/merci" netlify name="home-contact">
                 <div class="form__row">
                   <label class="form__label" for="namec">Nom</label>
@@ -347,7 +323,7 @@
 
 
 <!-- Section -->
-{{ with .Params.section6 }}
+{{ with .Params.section7 }}
 <section class="section section--clients" id="partenaires">
     <div class="section__content section__content--fix-width section__content--padding">        
       <div class="grid grid--5col">
@@ -364,7 +340,7 @@
 {{ end }}
 
 <!-- Section -->
-{{ with .Params.section7 }}
+{{ with .Params.section8 }}
 <section class="section section--cta" id="cta">
     <div class="section__content section__content--fix-width section__content--padding">
       <h2 class="section__title section__title--centered section__title--cta">{{- .title -}}</h2>

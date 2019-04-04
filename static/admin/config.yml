@@ -7,8 +7,6 @@ backend:
 media_folder: "themes/dealfinder/source-images" # Folder where user uploaded files should go
 public_folder: "/img" # The src attribute for uploaded media will begin with
 
-publish_mode: editorial_workflow
-
 collections:
   - name: "pages"
     label: "Pages"
@@ -86,10 +84,24 @@ collections:
             fields:
               - {label: "Titre", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
-              - {label: "Boite de gauche - Ligne 1", name: "tagline1", widget: "text"}
-              - {label: "Boite de gauche - Ligne 2", name: "tagline2", widget: "text"}
+              - name: points
+                label: "Témoignages"
+                widget: list
+                allow_add: true
+                fields:
+                  - {label: "Nom", name: "name", widget: "string"}
+                  - {label: "Témoignage", name: "description", widget: "string"}
+                  - {label: "Image", name: "image", widget: "image", hint: "Utilisez une image de 250px par 250px."}
           - name: section6
             label: Section 6
+            widget: object
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Boite de gauche - Ligne 1", name: "tagline1", widget: "text"}
+              - {label: "Boite de gauche - Ligne 2", name: "tagline2", widget: "text"}
+          - name: section7
+            label: Section 7
             widget: object
             fields:
               - name: clients
@@ -99,8 +111,8 @@ collections:
                 fields:
                   - {label: "Lien vers leur site", name: "link", widget: "string"}
                   - {label: "Logo", name: "logo", widget: "image", hint: "Utilisez un PNG de 150px de large, avec fond transparent."}
-          - name: section7
-            label: Section 7
+          - name: section8
+            label: Section 8
             widget: object
             fields:
               - {label: "Titre", name: "title", widget: "string"}

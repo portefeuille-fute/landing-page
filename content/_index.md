@@ -84,6 +84,19 @@ section4:
       title: Consultation des rabais
   title: Comment ça marche?
 section5:
+  title: Témoignages
+  description: >-
+    Découvrez ce qu'on à dire les gens qui économisez grâce à nous.
+  points:
+    - image: images/avatar-1.jpg
+      name: Joannie de Montréal
+      description: >-
+        Portefeuille Futé me permet de sauver temps et argent dans mon train de vie avec mes deux enfants. J'ai réussi à économiser 750$ l'année dernière!
+    - image: images/avatar-1.jpg
+      name: Maxim de Québec
+      description: >-
+        J'ai découvert plein de rabais auxquel j'avais droit grâce à Portefeuille Futé. En plus, j'encourage une entreprise qui supporte la cause environnementale.
+section6:
   description: >-
     Laissez-nous analyser le potentiel de vos économies en fonction de vos
     abonnements
@@ -91,8 +104,8 @@ section5:
     Notre <span>équipe</span> est disponible pour vous aider et s'assurer que
     vous ne manquez aucun rabais.
   tagline2: Ce serait un plaisir de vous parler. Écrivez-nous !
-  title: Intéressé ?
-section6:
+  title: Intéressant?
+section7:
   clients:
     - link: 'http://oupsie.com/'
       logo: images/clients/clients-logo1.png
@@ -104,7 +117,7 @@ section6:
       logo: images/clients/clients-logo4.png
     - link: 'http://oupsie.com/'
       logo: images/clients/clients-logo5.png
-section7:
+section8:
   btn:
     link: 'http://oupsie.com/'
     text: CRÉER UN COMPTE
