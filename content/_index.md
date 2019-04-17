@@ -36,10 +36,12 @@ section3:
       icon: images/icons/icons-64/browser-64.png
       title: Consultation des avantages par catégories
     - description: >-
-        Remplissez un budget approximatif pour visualiser par catégories les
-        économies que vous pouvez réaliser.
+        Répondez à nos questions pour vous aider à faire ressortir les
+        programmes de loyauté auxquels vous êtes membre. Vous serez surpris de
+        découvrir que vous êtes membre à plus de commerces de ce que vous
+        pensiez!
       icon: images/icons/icons-64/desktop-chart-64.png
-      title: Analyse de budget
+      title: Faites ressortir vos programmes de loyauté
     - description: >-
         Utilisez notre étude d’achat géolocalisé pour trouver les commercants où
         vous pouvez utiliser vos rabais.
@@ -84,18 +86,21 @@ section4:
       title: Consultation des rabais
   title: Comment ça marche?
 section5:
-  title: Témoignages
-  description: >-
-    Découvrez ce qu'on à dire les gens qui économisez grâce à nous.
+  description: Découvrez ce qu'on à dire les gens qui économisez grâce à nous.
   points:
-    - image: images/avatar-1.jpg
+    - description: >-
+        Portefeuille Futé me permet de sauver temps et argent dans mon train de
+        vie avec mes deux enfants. J'ai réussi à économiser 750$ l'année
+        dernière!
+      image: images/avatar-1.jpg
       name: Joannie de Montréal
-      description: >-
-        Portefeuille Futé me permet de sauver temps et argent dans mon train de vie avec mes deux enfants. J'ai réussi à économiser 750$ l'année dernière!
-    - image: images/avatar-1.jpg
+    - description: >-
+        J'ai découvert plein de rabais auxquel j'avais droit grâce à
+        Portefeuille Futé. En plus, j'encourage une entreprise qui supporte la
+        cause environnementale.
+      image: images/avatar-1.jpg
       name: Maxim de Québec
-      description: >-
-        J'ai découvert plein de rabais auxquel j'avais droit grâce à Portefeuille Futé. En plus, j'encourage une entreprise qui supporte la cause environnementale.
+  title: Témoignages
 section6:
   description: >-
     Laissez-nous analyser le potentiel de vos économies en fonction de vos
