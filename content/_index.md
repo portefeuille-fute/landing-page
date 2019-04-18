@@ -40,7 +40,7 @@ section3:
         programmes de loyauté auxquels vous êtes membre. Vous serez surpris de
         découvrir que vous êtes membre à plus de commerces de ce que vous
         pensiez!
-      icon: images/icons/icons-64/desktop-chart-64.png
+      icon: images/icons/icons-64/research-64.png
       title: Faites ressortir vos programmes de loyauté
     - description: >-
         Utilisez notre étude d’achat géolocalisé pour trouver les commercants où
@@ -56,7 +56,7 @@ section3:
         Utilisez cette fonction qui cherchera, dans notre banque de données, le
         fournisseur qui offre les meilleurs avantages membre dans une catégorie
         pour laquelle vous souhaitez économiser davantage.
-      icon: images/icons/icons-64/research-64.png
+      icon: images/icons/icons-64/search-user-64.png
       title: Fournisseur du meilleur rabais
     - description: >-
         Certains événements telle une rentrée scolaire ou un déménagement
