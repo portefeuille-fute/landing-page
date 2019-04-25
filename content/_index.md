@@ -7,7 +7,7 @@ section1:
     link: 'http://oupsie.com/'
     text: CONNEXION
   description: Maximisez les <span>avantages membre</span> auxquels vous avez droit
-  image: images/intro-animation.png
+  image: /img/temporaire3-2.jpg
   title: Ouvrez la porte aux <span>économies</span>
 section2:
   description: >-
