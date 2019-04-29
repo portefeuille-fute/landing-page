@@ -33,7 +33,6 @@ const jsDest = 'themes/dealfinder/static/js';
 gulp.task("image-resize", () => {
   return gulp.src("themes/dealfinder/source-images/*.{jpg,png,jpeg,JPG}")
     .pipe(newer("themes/dealfinder/static/img"))
-    .pipe(imagemin())
     .pipe(imageresize({ width: imagexl}))
     .pipe(gulp.dest("themes/dealfinder/static/xl/img"))
     .pipe(imageresize({ width: imagefull }))

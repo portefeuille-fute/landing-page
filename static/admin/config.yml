@@ -4,7 +4,7 @@ backend:
     - admin
   branch: master # Branch to update (master by default)
 
-media_folder: "themes/dealfinder/source-images" # Folder where user uploaded files should go
+media_folder: "themes/dealfinder/static/img" # Folder where user uploaded files should go
 public_folder: "/img" # The src attribute for uploaded media will begin with
 
 collections:
