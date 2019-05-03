@@ -2892,3 +2892,16 @@ Akia
 #netlify-identity-widget {
   z-index: 1000 !important;
 }
+
+.intro-animation img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.hiw-content .swiper-slide img {
+  max-width: 1000px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}

@@ -1,13 +1,13 @@
 ---
 section1:
   btn1:
-    link: 'http://oupsie.com/'
+    link: 'https://app.portefeuillefute.ca/register'
     text: INSCRIPTION
   btn2:
-    link: 'http://oupsie.com/'
+    link: 'https://app.portefeuillefute.ca/login'
     text: CONNEXION
   description: Maximisez les <span>avantages membre</span> auxquels vous avez droit
-  image: /img/temporaire3.jpg
+  image: /img/top-screenshot-app.jpg
   title: Ouvrez la porte aux <span>économies</span>
 section2:
   description: >-
@@ -73,17 +73,17 @@ section4:
     utiliser plus facilement.
   points:
     - icon: images/icons/icons-64/users-64.png
-      image: images/hiw-slide/slide1.png
+      image: /img/creation-compte-app.jpg
       title: Inscription
     - icon: images/icons/icons-64/search-user-64.png
-      image: images/hiw-slide/slide2.png
+      image: /img/choix-abonnements-app-menu.jpg
       title: Sélection d'abonnements
-    - icon: images/icons/icons-64/wallet-64.png
-      image: images/hiw-slide/slide3.png
-      title: Budget
     - icon: images/icons/icons-64/browser-64.png
-      image: images/hiw-slide/slide1.png
+      image: /img/consultation-rabais-app.jpg
       title: Consultation des rabais
+    - icon: images/icons/icons-64/wallet-64.png
+      image: /img/budget-app.jpg
+      title: Budget
   title: Comment ça marche?
 section5:
   description: Découvrez ce qu'on à dire les gens qui économisez grâce à nous.
