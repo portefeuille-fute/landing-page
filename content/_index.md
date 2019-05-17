@@ -14,7 +14,7 @@ section2:
     Nous vous offrons la centralisation de vos informations par rapport aux
     avantages membre que vous possédez. Nous aspirons à maximiser votre pouvoir
     d'achat, tout en investissant dans la protection de l'environnement.
-  image: /img/gif2.gif
+  image: /img/home-gif-2.gif
   points:
     - text: >-
         33% de nos profits sont réinvestis dans des projets de protection de
@@ -76,14 +76,11 @@ section4:
       image: /img/creation-compte-app.jpg
       title: Inscription
     - icon: images/icons/icons-64/search-user-64.png
-      image: /img/choix-abonnements-app-menu.jpg
+      image: /img/choix-abonnements-app-2.jpg
       title: Sélection d'abonnements
     - icon: images/icons/icons-64/browser-64.png
-      image: /img/consultation-rabais-app.jpg
+      image: /img/consultation-rabais-app-2.jpg
       title: Consultation des rabais
-    - icon: images/icons/icons-64/wallet-64.png
-      image: /img/budget-app.jpg
-      title: Budget
   title: Comment ça marche?
 section5:
   description: Découvrez ce qu'on à dire les gens qui économisez grâce à nous.

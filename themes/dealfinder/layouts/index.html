@@ -21,28 +21,6 @@
 </section>
 {{ end }}
 
-<!-- Section -- about -->
-{{ with .Params.section2 }}
-<section class="section" id="about">
-    <div class="section__content section__content--fix-width section__content--padding">
-      <div class="grid grid--5col grid--about">
-        <div class="grid__item grid__item--x2">
-          <h3 class="grid__title">{{- .title | markdownify -}}</span></h3>
-          <p class="grid__text">{{ .description | markdownify }}</p>
-          <ul class="grid__list">
-            {{- range .points -}}
-            <li>{{ .text }}</li> 
-            {{- end -}}
-          </ul>
-        </div>
-        <div class="grid__item grid__item--x3">
-          <div class="grid__image grid__image--right"><img src="{{- .image -}}" alt="" title=""/></div>
-        </div>
-      </div>
-    </div>
-</section>
-{{ end }}
-
 <!-- Section -- features -->
 {{ with .Params.section3 }}
 <section class="section section--features" id="features">
@@ -70,6 +48,32 @@
         {{- end -}}
       </div>
       <div class="clear"></div>
+    </div>
+</section>
+{{ end }}
+
+<!-- Section -- about -->
+{{ with .Params.section2 }}
+<section class="section" id="about">
+    <div class="section__content section__content--fix-width section__content--padding">
+      <div class="grid grid--5col grid--about">
+        <div class="grid__item grid__item--x2">
+          <h3 class="grid__title">{{- .title | markdownify -}}</span></h3>
+          <p class="grid__text">{{ .description | markdownify }}</p>
+          <ul class="grid__list">
+            {{- range .points -}}
+            <li>{{ .text }}</li> 
+            {{- end -}}
+          </ul>
+        </div>
+        <div class="grid__item grid__item--x3">
+          <div class="grid__image grid__image--right">
+            <video autoplay loop muted playsinline>
+              <!-- <source src="oneDoesNotSimply.webm" type="video/webm"> -->
+              <source src="/img/home-video-2.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
     </div>
 </section>
 {{ end }}
@@ -254,7 +258,7 @@
         <div class="grid__item grid__item--x2 grid__item--padding">
           <h3 class="grid__title">{{- .tagline1 | markdownify -}}</h3>
           <p class="grid__text">{{- .tagline2 -}}</p>
-          <a href="mailto:info@dealfinder.com" class="grid__more">info@dealfinder.com</a>
+          <a href="mailto:info@portefeuillefute.ca" class="grid__more">info@portefeuillefute.ca</a>
         </div>
         <div class="grid__item grid__item--x3 grid__item--form">
             <div class="grid__form form">

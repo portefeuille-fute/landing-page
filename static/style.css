@@ -2905,3 +2905,48 @@ Akia
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
+
+#about .grid__image--right video {
+  max-width: 100%;
+}
+
+.section--features {
+  background-color: white
+}
+
+.header__logo-title img {
+  max-height: 45px;
+}
+
+.thank-you-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.thank-you-content p {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  font-size: 16px;
+}
+
+.thank-you-content p a {
+  color: white !important;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  #about .grid--5col .grid__item--x3, #about .grid--5col .grid__item--x2 {
+    width: 100%;
+  }
+  #about .grid__image--right {
+    text-align: center;
+  } 
+  #about .grid__image--right video {
+    max-width: 80%;
+  }
+}
