@@ -14,7 +14,7 @@ section2:
     Nous vous offrons la centralisation de vos informations par rapport aux
     avantages membre que vous possédez. Nous aspirons à maximiser votre pouvoir
     d'achat, tout en investissant dans la protection de l'environnement.
-  image: /img/home-gif-2.gif
+  image: /img/home-video-2.mp4
   points:
     - text: >-
         33% de nos profits sont réinvestis dans des projets de protection de
