@@ -10,9 +10,6 @@
 		{{block "main" . }}
 		{{end}}
 		{{ partial "site-footer.html" . }}
-		{{- if .IsHome -}}
-		{{ partial "site/modal-animation.html" . }}
-		{{- end -}}
 		{{ partial "footer/site-scripts.html" . }}
 	</body>
 </html>

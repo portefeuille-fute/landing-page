@@ -2915,7 +2915,7 @@ Akia
 }
 
 .header__logo-title img {
-  max-height: 45px;
+  max-width: 200px;
 }
 
 .thank-you-content {

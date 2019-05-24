@@ -7,7 +7,7 @@ section1:
     link: 'https://app.portefeuillefute.ca/login'
     text: CONNEXION
   description: Maximisez les <span>avantages membre</span> auxquels vous avez droit
-  image: /img/top-screenshot-app.jpg
+  image: /img/choix-abonnements-app-2.jpg
   title: Ouvrez la porte aux <span>économies</span>
 section2:
   description: >-
