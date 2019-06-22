@@ -18,10 +18,11 @@
       <div class="grid__item">
         <h3 class="grid__title grid__title--footer">Compagnie</h3>
         <ul class="grid__list grid__list--fmenu">
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#hiw">Comment ça marche</a></li>
-            <li><a href="#partenaires">Partenaires</a></li>
+            <li><a href="{{- $.Site.BaseURL -}}#contact">Contact</a></li>
+            <li><a href="{{- $.Site.BaseURL -}}#about">À propos</a></li>
+            <li><a href="{{- $.Site.BaseURL -}}#hiw">Comment ça marche</a></li>
+            <li><a href="{{- $.Site.BaseURL -}}#partenaires">Partenaires</a></li>
+            <li><a href="{{- $.Site.BaseURL -}}politique-de-confidentialite" target="_blank" rel="noopener noreferrer">Politique de confidentalité</a></li>
         </ul>
       </div>
       <div class="grid__item">
@@ -29,11 +30,14 @@
         <ul class="grid__list grid__list--fmenu">
             <li><a href="https://app.portefeuillefute.ca/login" target="_blank" rel="noopener noreferrer">Connexion</a></li>
             <li><a href="https://app.portefeuillefute.ca/register" target="_blank" rel="noopener noreferrer">Créer un compte</a></li>
+            <li><a href="{{- $.Site.BaseURL -}}conditions-d-utilisation" target="_blank" rel="noopener noreferrer">Conditions d'utilisation</a></li>
         </ul>
       </div>
     </div>
   </div>
+  {{- if or (.IsHome) (eq .Params.slug "merci") -}}
   <svg class="svg-cta-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
     <polygon fill="#024085" points="0,100 100,0 0,0"/>
   </svg>
+  {{- end -}}
 </footer>

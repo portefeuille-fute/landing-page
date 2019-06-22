@@ -1,4 +1,4 @@
-<header class="header">
+<header class='header{{ if and (not .IsHome) (not (eq .Params.slug "merci")) }} header--page{{ end }}'>
   <div class="header__content header__content--fix-width">
     <div class="header__logo-title">
       <a href="{{ $.Site.BaseURL -}}"><img src="/img/logo-sans-portefeuille-fute-vert.png" title="Logo Portefeuille Fute"/></a>

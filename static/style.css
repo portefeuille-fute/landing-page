@@ -2911,7 +2911,30 @@ Akia
 }
 
 .section--features {
-  background-color: white
+  background-color: white;
+  position: relative;
+}
+
+.section {
+  position: relative;
+}
+
+.section--features:after,
+.section--about:after,
+.section--hiw:after,
+.section--testimonials:after {
+  content: " ";
+  border-bottom: 1px solid rgba(112,112,122,0.2);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  max-width: 400px;
+}
+
+.section--cta {
+  margin-top: 70px;
 }
 
 .header__logo-title img {
@@ -2937,6 +2960,58 @@ Akia
 .thank-you-content p a {
   color: white !important;
   text-decoration: underline;
+}
+
+.general-content {
+  overflow-x: hidden;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.header--page .header__menu > ul > li.header__btn--login > a {
+  color: #000;
+  border-color: #000;
+}
+
+.header--page .menu-button {
+  border-bottom: 1px solid #000;
+  &:before {
+    border-bottom: 1px solid #000;
+    border-top: 1px double #000;
+  }
+}
+
+.general-content h1,
+.general-content h2,
+.general-content h3,
+.general-content h4 {
+  font-weight: 700;
+  margin: 0px;
+  position: relative;
+  color: #111935;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.general-content h1 {
+  padding: 10px 0 40px 0;
+}
+
+.general-content p,
+.general-content ul,
+.general-content ol {
+  margin-bottom: 20px;
+}
+
+.general-content ul {
+  list-style: disc;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.general-content ul li,
+.general-content ol li {
+  line-height: 1.5em;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {

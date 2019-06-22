@@ -1,8 +1,11 @@
 ---
+title: "Dealfinder | Accédez aux économies auxquels vous avez droit"
+description: >-
+  Plusieurs de vos abonnements/services vous offrent des rabais chez des partenaires. Notre plateforme les centralise pour vous permettre de les utiliser plus facilement.
 section1:
   btn1:
     link: 'https://app.portefeuillefute.ca/register'
-    text: INSCRIPTION
+    text: CRÉER UN COMPTE
   btn2:
     link: 'https://app.portefeuillefute.ca/login'
     text: CONNEXION
@@ -14,6 +17,7 @@ section2:
     Nous vous offrons la centralisation de vos informations par rapport aux
     avantages membre que vous possédez. Nous aspirons à maximiser votre pouvoir
     d'achat, tout en investissant dans la protection de l'environnement.
+  wantVideo: false
   image: /img/1ere-section_1.png
   points:
     - text: >-

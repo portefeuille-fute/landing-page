@@ -18,6 +18,9 @@ collections:
         file: "content/_index.md"
         description: "Texte de votre page d'accueil"
         fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text"}
+          - {label: "Image - Partage Réseaux Sociaux", name: "image", widget: "image", required: false, hint: "Recommended size is 1200px x 630px"}
           - name: section1
             label: Section 1
             widget: object
@@ -49,7 +52,8 @@ collections:
                 allow_add: true
                 fields:
                   - {label: "Texte", name: "text", widget: "string"}
-              - {label: "Image", name: "image", widget: "image", hint: "Ça sort bien avec un GIF animé."}
+              - {label: "Veux-tu un vidéo?", name: "wantVideo", widget: "boolean", required: false, default: false, hint: "Si cette case est cochée, un vidéo sera utilisé. SVP remplir le champ suivant 'Image/Vidéo' en fonction de votre choix."}
+              - {label: "Image/Vidéo", name: "image", widget: "image"}
           - name: section3
             label: Section 3
             widget: object
@@ -123,6 +127,28 @@ collections:
                 fields:
                   - {label: "Texte", name: "text", widget: "string"}
                   - {label: "Lien", name: "link", widget: "string"}
+      - name: "politique-confidentialite"
+        label: "Politique de confidentialité"
+        file: "content/singes/politique-confidentialite.md"
+        description: "Texte de votre politique de confidentialité"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text"}
+          - {label: "Image - Partage Réseaux Sociaux", name: "image", widget: "image", required: false, hint: "Recommended size is 1200px x 630px"}
+          - {label: "Slug/Link", name: "slug", widget: "hidden", default: "politique-de-confidentialite", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "general"}
+          - {label: "Texte", name: "body", widget: "markdown"}
+      - name: "conditions-d-utilisation"
+        label: "Conditions d'utilisation"
+        file: "content/singes/conditions-utilisation.md"
+        description: "Texte de vos conditions d'utilisation"
+        fields:
+          - {label: "Titre SEO", name: "title", widget: "string"}
+          - {label: "Description SEO", name: "description", widget: "text"}
+          - {label: "Image - Partage Réseaux Sociaux", name: "image", widget: "image", required: false, hint: "Recommended size is 1200px x 630px"}
+          - {label: "Slug/Link", name: "slug", widget: "hidden", default: "conditions-d-utilisation", pattern: ["^[a-z0-9]+(?:-[a-z0-9/]+)*$", "Svp utilisez le format ceci-est-un-test"]}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "general"}
+          - {label: "Texte", name: "body", widget: "markdown"}
 ##### SETTINGS
   - name: "autres"
     label: "Autres"
