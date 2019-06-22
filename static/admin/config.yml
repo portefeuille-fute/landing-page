@@ -129,7 +129,7 @@ collections:
                   - {label: "Lien", name: "link", widget: "string"}
       - name: "politique-confidentialite"
         label: "Politique de confidentialité"
-        file: "content/singes/politique-confidentialite.md"
+        file: "content/singles/politique-confidentialite.md"
         description: "Texte de votre politique de confidentialité"
         fields:
           - {label: "Titre SEO", name: "title", widget: "string"}
@@ -140,7 +140,7 @@ collections:
           - {label: "Texte", name: "body", widget: "markdown"}
       - name: "conditions-d-utilisation"
         label: "Conditions d'utilisation"
-        file: "content/singes/conditions-utilisation.md"
+        file: "content/singles/conditions-utilisation.md"
         description: "Texte de vos conditions d'utilisation"
         fields:
           - {label: "Titre SEO", name: "title", widget: "string"}
