@@ -2,7 +2,7 @@
 title: "Dealfinder | Accédez aux économies auxquels vous avez droit"
 description: >-
   Plusieurs de vos abonnements/services vous offrent des rabais chez des partenaires. Notre plateforme les centralise pour vous permettre de les utiliser plus facilement.
-section1:
+sectionSlider:
   btn1:
     link: 'https://app.portefeuillefute.ca/register'
     text: CRÉER UN COMPTE
@@ -12,23 +12,7 @@ section1:
   description: Maximisez les <span>avantages membre</span> auxquels vous avez droit
   image: /img/choix-abonnements-app-2.jpg
   title: Ouvrez la porte aux <span>économies</span>
-section2:
-  description: >-
-    Nous vous offrons la centralisation de vos informations par rapport aux
-    avantages membre que vous possédez. Nous aspirons à maximiser votre pouvoir
-    d'achat, tout en investissant dans la protection de l'environnement.
-  wantVideo: false
-  image: /img/1ere-section_1.png
-  points:
-    - text: >-
-        33% de nos profits sont réinvestis dans des projets de protection de
-        l'environnement 
-    - text: >-
-        6 fonctionnalités pour faciliter et maximiser l’utilisation de vos
-        rabais
-    - text: Suivi sans effort de vos avantages membre
-  title: Sauver votre <span>argent</span> et la <span>planète</span> en même temps
-section3:
+sectionFonctionnalites:
   description: >-
     Nous vous proposons 6 fonctionnalités qui vous permettront d’utiliser plus
     facilement et efficacement les rabais issus des différents avantages membre
@@ -70,7 +54,40 @@ section3:
       icon: images/icons/icons-64/raport-64.png
       title: Événement
   title: Fonctionnalités du Portefeuille Futé
-section4:
+sectionBudget:
+  title: Combien puis-je <span>sauver</span> en utilisant mes <span>avantages membres</span>?
+  description: >-
+    Peu importe votre situation de vie, vous ne maximisez probablement l'utilisation de vos avantages membres. Nous avons décortiquer pour vous les économies potentielles de quelqu'un qui est abonné à CAA, Vidéotron et Éconofitness.
+  notes:
+    - text: "*Les budgets moyens de l'Institut de la Statistique du Québec ont été utilisés pour estimer les économies potentielles."
+    - text: "*Les économies potentielles sont des estimations."
+  profiles:
+    - icon: /img/single.png
+      title: Célibataire
+      image:
+    - icon: /img/couple.png
+      title: Couple
+      image:
+    - icon: /img/family.png
+      title: Famille
+      image:
+sectionAbout:
+  description: >-
+    Nous vous offrons la centralisation de vos informations par rapport aux
+    avantages membre que vous possédez. Nous aspirons à maximiser votre pouvoir
+    d'achat, tout en investissant dans la protection de l'environnement.
+  wantVideo: false
+  image: /img/1ere-section_1.png
+  points:
+    - text: >-
+        33% de nos profits sont réinvestis dans des projets de protection de
+        l'environnement 
+    - text: >-
+        6 fonctionnalités pour faciliter et maximiser l’utilisation de vos
+        rabais
+    - text: Suivi sans effort de vos avantages membre
+  title: Sauver votre <span>argent</span> et la <span>planète</span> en même temps
+sectionHiw:
   description: >-
     Plusieurs de vos abonnements/services vous offrent des rabais chez des
     partenaires. Notre plateforme les centralise pour vous permettre de les
@@ -86,7 +103,7 @@ section4:
       image: /img/consultation-rabais-app-2.jpg
       title: Consultation des rabais
   title: Comment ça marche?
-section5:
+sectionTestimonials:
   description: Découvrez ce qu'on à dire les gens qui économisez grâce à nous.
   points:
     - description: >-
@@ -102,7 +119,7 @@ section5:
       image: images/avatar-1.jpg
       name: Maxim de Québec
   title: Témoignages
-section6:
+sectionContact:
   description: >-
     Laissez-nous analyser le potentiel de vos économies en fonction de vos
     abonnements
@@ -111,7 +128,7 @@ section6:
     vous ne manquez aucun rabais.
   tagline2: Ce serait un plaisir de vous parler. Écrivez-nous !
   title: Intéressant?
-section7:
+sectionClient:
   clients:
     - link: 'http://oupsie.com/'
       logo: images/clients/clients-logo1.png
@@ -123,7 +140,7 @@ section7:
       logo: images/clients/clients-logo4.png
     - link: 'http://oupsie.com/'
       logo: images/clients/clients-logo5.png
-section8:
+sectionCta:
   btn:
     link: 'http://oupsie.com/'
     text: CRÉER UN COMPTE

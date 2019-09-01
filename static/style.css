@@ -3014,6 +3014,17 @@ Akia
   line-height: 1.5em;
 }
 
+.grid--about small {
+	font-size: 0.8em;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.hiw-titles__slide.fixed-height img {
+	width: auto !important;
+	height: 50px;
+}
+
 @media screen and (min-width: 800px) and (max-width: 1024px) {
   #about .grid--5col .grid__item--x3, #about .grid--5col .grid__item--x2 {
     width: 100%;

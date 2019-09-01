@@ -21,8 +21,8 @@ collections:
           - {label: "Titre SEO", name: "title", widget: "string"}
           - {label: "Description SEO", name: "description", widget: "text"}
           - {label: "Image - Partage Réseaux Sociaux", name: "image", widget: "image", required: false, hint: "Recommended size is 1200px x 630px"}
-          - name: section1
-            label: Section 1
+          - name: sectionSlider
+            label: Section Slider
             widget: object
             fields:
               - {label: "Titre", name: "title", widget: "string"}
@@ -40,22 +40,8 @@ collections:
                   - {label: "Texte", name: "text", widget: "string"}
                   - {label: "Lien", name: "link", widget: "string"}
               - {label: "Image", name: "image", widget: "image", hint: "Utilisez une image de 1100px par 637px."}
-          - name: section2
-            label: Section 2
-            widget: object
-            fields:
-              - {label: "Titre", name: "title", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
-              - name: points
-                label: Points notables
-                widget: list
-                allow_add: true
-                fields:
-                  - {label: "Texte", name: "text", widget: "string"}
-              - {label: "Veux-tu un vidéo?", name: "wantVideo", widget: "boolean", required: false, default: false, hint: "Si cette case est cochée, un vidéo sera utilisé. SVP remplir le champ suivant 'Image/Vidéo' en fonction de votre choix."}
-              - {label: "Image/Vidéo", name: "image", widget: "image"}
-          - name: section3
-            label: Section 3
+          - name: sectionFonctionnalites
+            label: Section Fonctionnalites
             widget: object
             fields:
               - {label: "Titre", name: "title", widget: "string"}
@@ -68,8 +54,42 @@ collections:
                   - {label: "Icône", name: "icon", widget: "string"}
                   - {label: "Titre", name: "title", widget: "string"}
                   - {label: "Description", name: "description", widget: "text"}
-          - name: section4
-            label: Section 4
+          - name: sectionBudget
+            label: Section Budget
+            widget: object
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - name: notes
+                label: Notes
+                widget: list
+                allow_add: true
+                fields:
+                  - {label: "Texte", name: "text", widget: "string"}
+              - name: Profils
+                label: profiles
+                widget: list
+                allow_add: true
+                fields:
+                  - {label: "Icône", name: "icon", widget: "string"}
+                  - {label: "Titre", name: "title", widget: "string"}
+                  - {label: "Image", name: "image", widget: "image", hint: "Utilisez une image de 1100px par 637px."}
+          - name: sectionAbout
+            label: Section À Propos
+            widget: object
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - name: points
+                label: Points notables
+                widget: list
+                allow_add: true
+                fields:
+                  - {label: "Texte", name: "text", widget: "string"}
+              - {label: "Veux-tu un vidéo?", name: "wantVideo", widget: "boolean", required: false, default: false, hint: "Si cette case est cochée, un vidéo sera utilisé. SVP remplir le champ suivant 'Image/Vidéo' en fonction de votre choix."}
+              - {label: "Image/Vidéo", name: "image", widget: "image"}
+          - name: sectionHiw
+            label: "Section Comment Ça Marche"
             widget: object
             fields:
               - {label: "Titre", name: "title", widget: "string"}
@@ -82,8 +102,8 @@ collections:
                   - {label: "Icône", name: "icon", widget: "string"}
                   - {label: "Titre", name: "title", widget: "string"}
                   - {label: "Image", name: "image", widget: "image", hint: "Utilisez une image de 1100px par 637px."}
-          - name: section5
-            label: Section 5
+          - name: sectionTestimonials
+            label: "Section Témoignages"
             widget: object
             fields:
               - {label: "Titre", name: "title", widget: "string"}
@@ -96,16 +116,16 @@ collections:
                   - {label: "Nom", name: "name", widget: "string"}
                   - {label: "Témoignage", name: "description", widget: "string"}
                   - {label: "Image", name: "image", widget: "image", hint: "Utilisez une image de 250px par 250px."}
-          - name: section6
-            label: Section 6
+          - name: sectionContact
+            label: Section Contact
             widget: object
             fields:
               - {label: "Titre", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
               - {label: "Boite de gauche - Ligne 1", name: "tagline1", widget: "text"}
               - {label: "Boite de gauche - Ligne 2", name: "tagline2", widget: "text"}
-          - name: section7
-            label: Section 7
+          - name: sectionClient
+            label: Section Client
             widget: object
             fields:
               - name: clients
@@ -115,8 +135,8 @@ collections:
                 fields:
                   - {label: "Lien vers leur site", name: "link", widget: "string"}
                   - {label: "Logo", name: "logo", widget: "image", hint: "Utilisez un PNG de 150px de large, avec fond transparent."}
-          - name: section8
-            label: Section 8
+          - name: sectionCta
+            label: Section Call To Action
             widget: object
             fields:
               - {label: "Titre", name: "title", widget: "string"}

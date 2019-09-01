@@ -1,6 +1,6 @@
 {{ define "main" }}
 <!-- Section -- intro -->
-{{ with .Params.section1 }}
+{{ with .Params.sectionSlider}}
 <section class="section section--intro" id="intro">
     <div class="section__content section__content--fix-width section__content--intro">
       <div class="intro">
@@ -25,7 +25,7 @@
 {{ end }}
 
 <!-- Section -- features -->
-{{ with .Params.section3 }}
+{{ with .Params.sectionFonctionnalites }}
 <section class="section section--features" id="features">
     <div class="section__content section__content--fix-width section__content--features">
       <h2 class="section__title section__title--centered section__title--features">{{- .title -}}</h2>
@@ -55,71 +55,110 @@
 </section>
 {{ end }}
 
-<!-- Section -- about -->
-{{ with .Params.section2 }}
+<!-- Section -- budget -->
+{{ with .Params.sectionBudget }}
 <section class="section section--about" id="about">
     <div class="section__content section__content--fix-width section__content--padding">
       <div class="grid grid--5col grid--about">
         <div class="grid__item grid__item--x2">
           <h3 class="grid__title">{{- .title | markdownify -}}</span></h3>
           <p class="grid__text">{{ .description | markdownify }}</p>
-          <ul class="grid__list">
-            {{- range .points -}}
-            <li>{{ .text }}</li> 
-            {{- end -}}
-          </ul>
+          {{- range .notes -}}
+            <small>{{ .text }}</small>
+          {{- end -}}
         </div>
         <div class="grid__item grid__item--x3">
-          <div class="grid__image grid__image--right">
-            {{- if .params.wantVideo -}}
-            <video autoplay loop muted playsinline>
-              <!-- <source src="oneDoesNotSimply.webm" type="video/webm"> -->
-              <source src="{{- .image -}}" type="video/mp4">
-            </video>
-            {{- else -}}
-            <img src="{{- .image -}}" alt="Sauver de l'argent">
-            {{- end -}}
+          <div class="hiw">
+            <div class="hiw-titles">
+              <div class="hiw-titles__wrapper swiper-wrapper">
+                {{- range .profiles -}}
+                <div class="hiw-titles__slide swiper-slide fixed-height">
+                  <img src="{{- .icon -}}" alt="{{- .title -}}" title="{{- .title -}}" />
+                  <span>{{- .title -}}</span>
+                </div>
+                {{- end -}}
+              </div>
+            </div>
+            <div class="hiw-content">
+              <div class="hiw-content__wrapper swiper-wrapper">
+                {{- range .profiles -}}
+                <div class="hiw-content__slide swiper-slide">
+                  <!-- <img src="{{- .image -}}" alt="{{- .title -}}" title="{{- .title -}}" /> -->
+                </div>
+                {{- end -}}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 </section>
 {{ end }}
 
+<!-- Section -- about -->
+{{ with .Params.sectionAbout }}
+<section class="section section--about" id="about">
+  <div class="section__content section__content--fix-width section__content--padding">
+    <div class="grid grid--5col grid--about">
+      <div class="grid__item grid__item--x2 grid__item--floated-right">
+        <h3 class="grid__title">{{- .title | markdownify -}}</span></h3>
+        <p class="grid__text">{{ .description | markdownify }}</p>
+        <ul class="grid__list">
+          {{- range .points -}}
+          <li>{{ .text }}</li>
+          {{- end -}}
+        </ul>
+      </div>
+      <div class="grid__item grid__item--x3" style="float: left;">
+        <div class="grid__image grid__image--right">
+          {{- if .params.wantVideo -}}
+          <video autoplay loop muted playsinline>
+            <!-- <source src="oneDoesNotSimply.webm" type="video/webm"> -->
+            <source src="{{- .image -}}" type="video/mp4">
+          </video>
+          {{- else -}}
+          <img src="{{- .image -}}" alt="Sauver de l'argent">
+          {{- end -}}
+        </div>
+      </div>
+    </div>
+</section>
+{{ end }}
 
 <!-- Section -- How it works -->
-{{ with .Params.section4 }}
+{{ with .Params.sectionHiw }}
 <section class="section section--hiw" id="hiw">
     <div class="section__content section__content--fix-width section__content--padding">
       <h2 class="section__title section__title--centered">{{- .title -}}</h2>
       <div class="section__description section__description--centered">
         {{- .description | markdownify -}}
       </div>
-         <div class="hiw">
-            <div class="hiw-titles">
-              <div class="hiw-titles__wrapper swiper-wrapper">
-                {{- range .points -}}
-                <div class="hiw-titles__slide swiper-slide">
-                  <img src="{{- .icon -}}" alt="{{- .title -}}" title="{{- .title -}}"/>
-                  <span>{{- .title -}}</span>
-                </div>
-                {{- end -}}
-              </div>  
-            </div>                   
-            <div class="hiw-content">
-              <div class="hiw-content__wrapper swiper-wrapper">
-                {{- range .points -}}
-                <div class="hiw-content__slide swiper-slide">
-                    <img src="{{- .image -}}" alt="{{- .title -}}" title="{{- .title -}}"/>      
-                </div>
-                {{- end -}}
-              </div>
+      <div class="hiw">
+        <div class="hiw-titles">
+          <div class="hiw-titles__wrapper swiper-wrapper">
+            {{- range .points -}}
+            <div class="hiw-titles__slide swiper-slide">
+              <img src="{{- .icon -}}" alt="{{- .title -}}" title="{{- .title -}}"/>
+              <span>{{- .title -}}</span>
             </div>
+            {{- end -}}
+          </div>  
+        </div>                   
+        <div class="hiw-content">
+          <div class="hiw-content__wrapper swiper-wrapper">
+            {{- range .points -}}
+            <div class="hiw-content__slide swiper-slide">
+                <img src="{{- .image -}}" alt="{{- .title -}}" title="{{- .title -}}"/>      
+            </div>
+            {{- end -}}
+          </div>
         </div>
+      </div>
     </div>
 </section>
 {{ end }}
 
-{{ with .Params.section5 }}
+{{ with .Params.sectionTestimonials }}
 <!-- Section -- testimonials -->
 <section class="section section--testimonials" id="testimonials">
 
@@ -253,7 +292,7 @@
 {{- end -}} 
 
 <!-- Section -- contact -->
-{{ with .Params.section6 }}
+{{ with .Params.sectionContact }}
 <section class="section" id="contact">
     <div class="section__content section__content--fix-width section__content--padding">
       <h2 class="section__title section__title--centered">{{- .title -}}</h2>
@@ -334,7 +373,7 @@
 
 
 <!-- Section -->
-{{ with .Params.section7 }}
+{{ with .Params.sectionClient }}
 <!-- <section class="section section--clients" id="partenaires">
     <div class="section__content section__content--fix-width section__content--padding">        
       <div class="grid grid--5col">
@@ -351,7 +390,7 @@
 {{ end }}
 
 <!-- Section -->
-{{ with .Params.section8 }}
+{{ with .Params.sectionCta }}
 <section class="section section--cta" id="cta">
     <div class="section__content section__content--fix-width section__content--padding">
       <h2 class="section__title section__title--centered section__title--cta">{{- .title -}}</h2>
