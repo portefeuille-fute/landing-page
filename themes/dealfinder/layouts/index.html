@@ -57,7 +57,7 @@
 
 <!-- Section -- budget -->
 {{ with .Params.sectionBudget }}
-<section class="section section--about" id="about">
+<section class="section section--budget" id="budget">
     <div class="section__content section__content--fix-width section__content--padding">
       <div class="grid grid--5col grid--about">
         <div class="grid__item grid__item--x2">
@@ -69,7 +69,7 @@
         </div>
         <div class="grid__item grid__item--x3">
           <div class="hiw">
-            <div class="hiw-titles">
+            <div class="hiw-budget">
               <div class="hiw-titles__wrapper swiper-wrapper">
                 {{- range .profiles -}}
                 <div class="hiw-titles__slide swiper-slide fixed-height">
@@ -79,11 +79,11 @@
                 {{- end -}}
               </div>
             </div>
-            <div class="hiw-content">
+            <div class="hiw-budget-table">
               <div class="hiw-content__wrapper swiper-wrapper">
                 {{- range .profiles -}}
                 <div class="hiw-content__slide swiper-slide">
-                  <!-- <img src="{{- .image -}}" alt="{{- .title -}}" title="{{- .title -}}" /> -->
+                  <img src="{{- .image -}}" alt="{{- .title -}}" title="{{- .title -}}" />
                 </div>
                 {{- end -}}
               </div>

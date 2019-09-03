@@ -64,13 +64,13 @@ sectionBudget:
   profiles:
     - icon: /img/single.png
       title: Célibataire
-      image:
+      image: /img/celibataire.jpg
     - icon: /img/couple.png
       title: Couple
-      image:
+      image: /img/couple.jpg
     - icon: /img/family.png
       title: Famille
-      image:
+      image: /img/famille.jpg
 sectionAbout:
   description: >-
     Nous vous offrons la centralisation de vos informations par rapport aux

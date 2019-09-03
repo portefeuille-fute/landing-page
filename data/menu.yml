@@ -1,6 +1,4 @@
 main:
-  - fr: ACCUEIL
-    link: intro
   - fr: FONCTIONNALITÉS
     link: features
     submenu: true
@@ -9,7 +7,9 @@ main:
         link: about
       - fr: COMMENT ÇA MARCHE
         link: hiw
-      - fr: PARTENAIRES
-        link: partenaires
+      - fr: TÉMOIGNAGES
+        link: testimonials
+  - fr: ÉCONOMIES
+    link: budget
   - fr: CONTACT
     link: contact

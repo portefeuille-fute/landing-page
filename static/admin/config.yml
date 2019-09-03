@@ -73,7 +73,7 @@ collections:
                 fields:
                   - {label: "Icône", name: "icon", widget: "string"}
                   - {label: "Titre", name: "title", widget: "string"}
-                  - {label: "Image", name: "image", widget: "image", hint: "Utilisez une image de 1100px par 637px."}
+                  - {label: "Image", name: "image", widget: "image", hint: "Utilisez une image d'environ 500px par 400px."}
           - name: sectionAbout
             label: Section À Propos
             widget: object
